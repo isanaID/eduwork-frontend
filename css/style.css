@@ -110,3 +110,13 @@ form, input, div {
   .btn:hover {
     opacity: 1;
   }
+
+  footer {
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+
+  footer p {
+    color: #b3aeb5;
+    font-size: 12px;
+  }

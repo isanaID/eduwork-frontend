@@ -3,62 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <title>Biografi</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>My portfolio</h1>
-    <hr>
-    <h2>Biografi</h2>
-    <p> Halo, perkenalkan nama saya Wibisana Putra Setyanegara, saya sedang berkuliah di Universitas Negeri Jakarta</p>
-    <p> sekarang saya sedang mempelajari Frontend dikelas MERN </p>
-    <h2>Skills</h2>
-    <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>React</li>
-        <li>NodeJS</li>
-    </ul>
-    <h2>Other Skills</h2>
-    <ol>
-        <li>Git</li>
-        <li>GitHub</li>
-        <li>Wordpress</li>
-        <li>AWS</li>
-    </ol>
-    <h2>Kelompok Tugas Kuliah</h2>
-    <table border="1" cellspacing="0" cellpadding="0"s>
-        <thead>
-            <tr>
-                <th>No</th>
-                <th>Nama</th>
-                <th>NIM</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>1</td>
-                <td>Wibisana</td>
-                <td>1512618033</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>Putra</td>
-                <td>1512618070</td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>Setyanegara</td>
-                <td>1512618084</td>
-            </tr>
-        </tbody>    
+    <header>
+    <div class="container">
+        <div class="header-logo">
+            <p>Wibisana Putra Setyanegara</p>
+        </div>
+    </div>
+    </header>
+    <div class="container bio">
+        <img class="selfphoto" src="240.png" alt="">
+        <h2>Biografi</h2>
+        <p> Halo, perkenalkan nama saya Wibisana Putra Setyanegara, saya sedang berkuliah di Universitas Negeri Jakarta</p>
+        <p> sekarang saya sedang mempelajari Frontend dikelas MERN </p>
+    </div>
+    <div class="container">
+    <div class="contents">
+        <h3 class="section-title">Skills</h3>
+        <div class="contents-item">
+          <img src="https://www.seekpng.com/png/full/141-1415544_html-css-projects-small-logo-on-html.png">
+          <p>HTML & CSS</p>
+        </div>
+        <div class="contents-item">
+          <img src="https://static.cdn-cdpl.com/source/b9a5514dc9fc5b70ff85311558a3cd27/PHP.png">
+          <p>PHP</p>
+        </div>
+        <div class="contents-item">
+          <img src="https://www.duniailkom.com/wp-content/uploads/2015/11/JavaScript-featured-duniailkom.png">
+          <p>Javascript</p>
+        </div>
+        <div class="contents-item">
+          <img src="https://proxsisgroup.com/wp-content/uploads/2019/08/104-1040733_kotlin-java-programming-language-logo-clipart.png">
+          <p>Java</p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+        <h3 class="section-title">Tools</h3>
+        <div class="contents">
+          <div class="contents-item">
+            <img src="https://e7.pngegg.com/pngimages/713/558/png-clipart-computer-icons-pro-git-github-logo-text-logo-thumbnail.png">
+            <p>Git</p>
+          </div>
+          <div class="contents-item">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/2048px-Octicons-mark-github.svg.png">
+            <p>Github</p>
+          </div>
+          <div class="contents-item">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/800px-Visual_Studio_Code_1.35_icon.svg.png">
+            <p>Visual Studio Code</p>
+          </div>
+        </div>
+    </div>
+    <div class="container">
+    <table border="1" cellspacing="0" cellpadding="0">
+    <thead>
+        <th>Sosial Media</th>
+        <th>Nama</th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Instagram</td>
+            <td><a href="http://instagram.com/isana.id">@isana.id</a></td>
+        </tr>
+        <tr>
+            <td>Facebook</td>
+            <td><a href="http://www.facebook.com/isanaid">Isana</a></td>
+        </tr>
+        <tr>
+            <td>Github</td>
+            <td><a href="http://github.com/isanaID">isanaID</a></td>
+        </tr>
+        <tr>
+            <td>Linkedin</td>
+            <td><a href="http://www.linkedin.com/in/isanawib">Wibisana Putra Setyanegara</a></td>
+        </tr>
     </table>
-    </br>
-    <form action="" method="post">
-        <label for="nama">Nama</label>
-        <input type="text" name="nama" id="nama"></br>
-        <label for="nim">NIM</label>
-        <input type="text" name="nim" id="nim"></br>
-        <button type="submit">Submit</button>
-    </form>
+    </div>
+    <div class="container form-container">
+        <h3 class="section-title">Contact Me</h3>
+        <form action="#" method="post">
+            <input class="form-control" type="text" name="name" placeholder="Name">
+            <input class="form-control" type="text" name="email" placeholder="Email">
+            <input class="form-control" type="text" name="subject" placeholder="Subject">
+            <textarea class="form-control" name="message" placeholder="Message"></textarea>
+            <button class="btn" type="submit" name="submit">Send</button>
 </body>
 </html>

@@ -7,43 +7,60 @@ form, input, div {
 }
 
 .container {
-    max-width: 1170px;
+    max-width: 1280px;
     width: 100%;
     padding: 5px 30px;
     margin: 0 auto;
+    position: relative;
   }
 
   .header-logo {
     font-size : 24px;
-    padding : 20px 40px;
+    padding : 0 40px;
     float : left;
   }
 
   header {
-    background-color:#26d0c9;
+    background-color:rgba(30, 39, 53, 0.9);
     color : #fff;
-    height : 90px;
+    height : 65px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 10;
   }
 
   .selfphoto {
-    width : 100px;
-    height : 100px;
+    width : 150px;
+    height : 150px;
     border-radius : 50%;
     margin-right : 20px;
     float : left;
   }
 
   .bio {
-    float : left;
-    margin-top : 20px;
-    margin-left : 200px;
+    margin-top : 40px;
     padding-bottom: 20px;
     font-size: 20px;
   }
 
+  .bio p{
+  margin-top: 3px;
+  padding-top: 10px;
+  }
+
   .contents {
-    height: 500px;
-    margin-top: 100px;
+    /*make contents in center*/
+    height: 300px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  .contents-item img {
+    display: flex;
+    flex: auto;
   }
 
   .section-title {
@@ -65,8 +82,8 @@ form, input, div {
   }
 
   .contents-item img {
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
   }
 
   table {
@@ -81,11 +98,11 @@ form, input, div {
     padding-left: 10px;
   }
 
-  /*Form*/
   .form-container {
     width: 100%;
     height: 500px;
     margin-top: 100px;
+    margin: 0 auto;
   }
 
   .form-control {
@@ -114,9 +131,33 @@ form, input, div {
   footer {
     padding-top: 30px;
     padding-bottom: 20px;
+    background-color: #000000;
   }
 
   footer p {
-    color: #b3aeb5;
+    color: #ffffff;
     font-size: 12px;
+  }
+
+  .top-wrapper {
+    padding: 180px 0 250px 0;
+    background-image: url(https://png.pngtree.com/thumb_back/fw800/background/20190828/pngtree-school-timetable-card-with-laptop-theme-in-background-image_307720.jpg);
+    background-size: cover;
+    color: white;
+    text-align: center;
+  }
+
+  .top-wrapper p {
+    font-size: 40px;
+    margin-top: 10px;
+  }
+
+  .social-media {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .social-media img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
   }

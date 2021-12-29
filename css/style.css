@@ -5,6 +5,7 @@
   background-size: cover;
   color: white;
   text-align: center;
+  position: relative;
 }
 
 .selfphoto {
@@ -27,19 +28,18 @@
 }
 
 .contents {
-  /*make contents in center*/
-  height: 300px;
+  height: 50%;
   margin: 0 auto;
   justify-content: center;
-  align-items: center;
   display: flex;
+  flex: auto;
+  flex-shrink: 0;
+  flex-flow: row wrap;
 }
 
 .contents-item img {
   width: 150px;
   height: 150px;
-  display: flex;
-  flex: auto;
 }
 
 .contents-item {
@@ -72,6 +72,7 @@
 }
 
 footer {
+  margin-top: 10px;
   padding-top: 30px;
   padding-bottom: 20px;
   background-color: #000000;
@@ -80,4 +81,39 @@ footer {
 footer p {
   color: #ffffff;
   font-size: 12px;
+}
+
+.flexul{
+  list-style: none;
+  margin: 0px;
+  padding: 60px 0px;
+  text-align: center;
+}
+
+.flex-item {
+  display: flex;
+}
+
+.flex-item li {
+  flex: auto;
+}
+
+@media (max-width: 1000px) {
+  .flex-item {
+    flex-wrap: wrap;
+  }
+  .flex-item li {
+    width: 50%;
+  }
+}
+
+@media (max-width: 670px) {
+  .flex-item {
+    flex-direction: column;
+  }
+  
+  .flex-item li {
+    margin: 0 auto;
+  }
+  
 }

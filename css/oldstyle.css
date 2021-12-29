@@ -1,0 +1,163 @@
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p,
+form, input, div {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+    max-width: 1280px;
+    width: 100%;
+    padding: 5px 30px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .header-logo {
+    font-size : 24px;
+    padding : 0 40px;
+    float : left;
+  }
+
+  header {
+    background-color:rgba(30, 39, 53, 0.9);
+    color : #fff;
+    height : 65px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+  }
+
+  .selfphoto {
+    width : 150px;
+    height : 150px;
+    border-radius : 50%;
+    margin-right : 20px;
+    float : left;
+  }
+
+  .bio {
+    margin-top : 40px;
+    padding-bottom: 20px;
+    font-size: 20px;
+  }
+
+  .bio p{
+  margin-top: 3px;
+  padding-top: 10px;
+  }
+
+  .contents {
+    /*make contents in center*/
+    height: 300px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  .contents-item img {
+    display: flex;
+    flex: auto;
+  }
+
+  .section-title {
+    border-bottom: 2px solid #dee7ec;
+    font-size: 28px;
+    padding-bottom: 15px;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  .contents-item {
+    float: left;
+    margin-right: 40px;
+  }
+  
+  .contents-item p {
+    font-size: 24px;
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  .contents-item img {
+    width: 180px;
+    height: 180px;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    height: 200px;
+    font-size: 18px;
+    margin: 0 auto;
+  }
+
+  td {
+    padding-left: 10px;
+  }
+
+  .form-container {
+    width: 100%;
+    height: 500px;
+    margin-top: 100px;
+    margin: 0 auto;
+  }
+
+  .form-control {
+    width: 100%;
+    height: 50px;
+    border-radius: 0;
+    border: 1px solid #dee7ec;
+    margin-bottom: 20px;
+    padding-left: 10px;
+  }
+
+  .btn {
+    padding: 12px 24px;
+    color: white;
+    display: inline-block;
+    opacity: 0.8;
+    border-radius: 4px;
+    text-align: center;
+    background-color: #5dca88;
+  }
+  
+  .btn:hover {
+    opacity: 1;
+  }
+
+  footer {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    background-color: #000000;
+  }
+
+  footer p {
+    color: #ffffff;
+    font-size: 12px;
+  }
+
+  .top-wrapper {
+    padding: 180px 0 250px 0;
+    background-image: url(https://png.pngtree.com/thumb_back/fw800/background/20190828/pngtree-school-timetable-card-with-laptop-theme-in-background-image_307720.jpg);
+    background-size: cover;
+    color: white;
+    text-align: center;
+  }
+
+  .top-wrapper p {
+    font-size: 40px;
+    margin-top: 10px;
+  }
+
+  .social-media {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .social-media img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }

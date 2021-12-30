@@ -1,4 +1,12 @@
 
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p,
+form, input, div {
+  margin: 0;
+  padding: 0;
+}
+
 .jumbotron {
   padding: 180px 0 250px 0;
   background-image: url(https://png.pngtree.com/thumb_back/fw800/background/20190828/pngtree-school-timetable-card-with-laptop-theme-in-background-image_307720.jpg);
@@ -116,5 +124,34 @@ footer p {
   .flex-item li {
     margin: 0 auto;
   }
+
+  .container {
+    padding:0;
+    margin:auto;
+  }
+
+  body {
+    padding:0;
+  }
+
+  .navbar-fixed-top, .navbar-fixed-bottom, .navbar-static-top {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom:0;
+  }
   
+}
+
+@media screen and (max-width: 500px) {
+
+  .jumbotron {
+    width: 600px;
+  }
+  .container {
+    width: 550px;
+  }
+
+  footer {
+    width: 600px;
+  }
 }

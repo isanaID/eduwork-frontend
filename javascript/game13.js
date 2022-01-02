@@ -11,7 +11,7 @@ const random = ()=> {
 }
 
 const match = ()=> {
-    alert("Tebak nomor dari 1 - 3. jika player berhasil menebak nomor yang benar, maka skor akan bertambah. apabila benar 3x, maka anda menang. apabila salah 3x, maka anda kalah");
+    alert("Tebak nomor dari 1 - 3. jika player berhasil menebak nomor yang benar, maka skor akan bertambah. apabila kor mencapai 5, maka player akan menang");
     random();
     let angka1 = prompt("Player 1 Masukan angka");
     let angka2 = prompt("Player 2 Masukan angka");

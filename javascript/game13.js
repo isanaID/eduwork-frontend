@@ -11,7 +11,6 @@ const random = ()=> {
 }
 
 const match = ()=> {
-    alert("Tebak nomor dari 1 - 3. jika player berhasil menebak nomor yang benar, maka skor akan bertambah. apabila kor mencapai 5, maka player akan menang");
     random();
     let angka1 = prompt("Player 1 Masukan angka");
     let angka2 = prompt("Player 2 Masukan angka");
@@ -28,11 +27,12 @@ const match = ()=> {
         alert("tidak ada yang menebak");
     }
     
-    alert(`Skor Player 1 : ${player1.skor} dan Player 2 : ${player2.skor}`);
+    alert(`Skor Player 1 = ${player1.skor} dan Player 2 = ${player2.skor}`);
 
 }
 
 const main = () => {
+    alert("Tebak nomor dari 1 - 3. jika player berhasil menebak nomor yang benar, maka skor akan bertambah. apabila skor mencapai 5, maka player akan menang");
     while (player1.skor < 5 || player2.skor < 5) {
         match();
         if (player1.skor == 5) {
@@ -42,6 +42,15 @@ const main = () => {
             alert("Player 2 menang");
             break;
         }
+    }
+    const playAgain = confirm("Ingin bermain lagi?");
+
+    if (playAgain == true) {
+        player1.skor = 0;
+        player2.skor = 0;
+        main();
+    } else {
+        alert("Terima kasih sudah bermain");
     }
 }
 
